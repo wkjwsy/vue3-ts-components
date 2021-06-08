@@ -3,7 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
-    "jsx": "preserve",
+    "jsx": "preserve", // 让ts不去编译jsx，而交给（专门给vue3编译jsx的loader）去编译，因为ts的jsx编译完全是遵循react的规则，和vue是有区别的
     "importHelpers": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
