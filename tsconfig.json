@@ -11,6 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "noImplicitAny": false, // 如果编译器无法根据变量的用途推断出变量的类型，它就会悄悄的把变量类型默认为any
     "types": [
       "webpack-env",
       "jest"

@@ -1,17 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>{{ age }}</h2>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
+const PropsType = {
+  msg: String,
+  age: {
+    type: Number,
+    require: true,
+  },
+} as const
 export default defineComponent({
   name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
+  props: PropsType,
 })
 </script>
 
